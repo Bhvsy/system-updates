@@ -1,63 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>System Updates | Bhvsy OS | Bhavishya Parjapati</title>
-    <meta name="description" content="Official changelog and version history of Bhavishya Parjapati (Bhvsy OS).">
-    <style>
-        body { font-family: monospace; background: #fff; color: #333; max-width: 700px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        h1 { border-bottom: 2px solid #000; padding-bottom: 10px; }
-        .version-block { margin-bottom: 40px; }
-        .version-title { font-size: 1.2rem; font-weight: bold; background: #eee; padding: 5px 10px; display: flex; justify-content: space-between; }
-        .date { font-weight: normal; color: #666; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 5px; }
-        .tag-new { background: #000; color: #fff; padding: 2px 6px; font-size: 0.7rem; border-radius: 4px; margin-left: 10px; }
-        .back-link { display: block; margin-top: 50px; color: #000; font-weight: bold; text-decoration: none; }
-        .back-link:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ═══════════════════════════════════════
+       PRIMARY SEO META
+       ═══════════════════════════════════════ -->
+  <title>System Updates & Changelog -- Bhvsy OS | Bhavishya Parjapati</title>
+  <meta name="description" content="Official changelog and system updates for Bhvsy OS -- the digital ecosystem by Bhavishya Parjapati. Track deployments, product launches, and roadmap updates including News Guard Extension and AI Trading Journal." />
+  <meta name="keywords" content="Bhvsy OS, Bhavishya Parjapati, changelog, system updates, News Guard Extension, AI Trading Journal, digital architect, prop trading tools, Chrome extension trader, PWA, developer portfolio, Bhvsy" />
+  <meta name="author" content="Bhavishya Parjapati" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://bhvsy.github.io/system-updates/" />
+
+  <!-- ═══════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, Discord)
+       ═══════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bhvsy OS" />
+  <meta property="og:title" content="System Updates & Changelog -- Bhvsy OS" />
+  <meta property="og:description" content="Track every deployment, product launch, and roadmap update from the Bhvsy OS ecosystem. Built by Bhavishya Parjapati -- Digital Architect & Tool Builder." />
+  <meta property="og:url" content="https://bhvsy.github.io/system-updates/" />
+  <meta property="og:image" content="https://bhvsy.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Bhvsy OS System Updates -- Changelog Dashboard" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ═══════════════════════════════════════
+       TWITTER CARD
+       ═══════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="System Updates & Changelog -- Bhvsy OS" />
+  <meta name="twitter:description" content="Official dispatch log from the Bhvsy OS ecosystem. Deployments, releases, and the roadmap -- all documented." />
+  <meta name="twitter:image" content="https://bhvsy.github.io/og-image.png" />
+  <meta name="twitter:image:alt" content="Bhvsy OS Changelog" />
+
+  <!-- ═══════════════════════════════════════
+       FAVICONS (from repository root)
+       ═══════════════════════════════════════ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#030308" />
+  <meta name="msapplication-TileColor" content="#030308" />
+
+  <!-- ═══════════════════════════════════════
+       STRUCTURED DATA (JSON-LD)
+       ═══════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "System Updates & Changelog -- Bhvsy OS",
+    "description": "Official changelog and system updates for Bhvsy OS by Bhavishya Parjapati. Track deployments, releases, and roadmap.",
+    "url": "https://bhvsy.github.io/system-updates/",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Bhvsy OS",
+      "url": "https://bhvsy.github.io"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Bhavishya Parjapati",
+      "url": "https://bhvsy.github.io",
+      "jobTitle": "Digital Architect & Tool Builder",
+      "knowsAbout": ["Web Development", "Trading Tools", "AI", "Chrome Extensions", "PWA"]
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Bhvsy OS Changelog",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Bhvsy OS Core Portal Deployed",
+          "description": "Complete brand overhaul with geometric B logo, PWA manifest, and SEO optimization."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News Guard Extension Released",
+          "description": "Chrome/Edge extension for prop firm traders with real-time news alerts and countdown timers."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Academic Sabbatical",
+          "description": "Operations scaled back to focus on 10th-grade HBSE Board Exams."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Project AI Trading Journal",
+          "description": "AI-powered trading journal leveraging local AI models on MSI RTX 4060 GPU infrastructure."
+        }
+      ]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bhvsy.github.io"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "System Updates",
+          "item": "https://bhvsy.github.io/system-updates/"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════
+       FONTS
+       ═══════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-void:      #030308;
+      --bg-card:      #080c1c;
+      --border-glass: rgba(0, 240, 255, 0.1);
+      --border-hover: rgba(0, 240, 255, 0.3);
+      --cyan:         #00f0ff;
+      --cyan-dim:     #00f0ff99;
+      --purple:       #a855f7;
+      --purple-dim:   #a855f799;
+      --green:        #34d399;
+      --amber:        #fbbf24;
+      --text-primary: #e4e8f1;
+      --text-muted:   #7a8ba7;
+      --text-dim:     #4a5568;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: var(--cyan-dim) var(--bg-void);
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-void);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bg-ambient {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      transform: translateZ(0);
+      will-change: transform;
+      background:
+        linear-gradient(rgba(0, 240, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.025) 1px, transparent 1px),
+        radial-gradient(ellipse 700px 500px at 20% 10%, rgba(0, 240, 255, 0.045), transparent),
+        radial-gradient(ellipse 500px 400px at 80% 85%, rgba(168, 85, 247, 0.035), transparent);
+      background-size: 60px 60px, 60px 60px, 100% 100%, 100% 100%;
+    }
+
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 24px 120px;
+    }
+
+    /* ═══════════════════════════════════════
+       STICKY NAV BAR
+       ═══════════════════════════════════════ */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      background: rgba(3, 3, 8, 0.92);
+      border-bottom: 1px solid var(--border-glass);
+      margin: 0 -24px 48px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .nav-brand-name {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+
+    .nav-brand-sub {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      color: var(--text-dim);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .nav-home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 22px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--cyan);
+      background: rgba(0, 240, 255, 0.06);
+      border: 1px solid rgba(0, 240, 255, 0.2);
+      border-radius: 10px;
+      transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+      transform: translateZ(0);
+    }
+
+    .nav-home-btn:hover {
+      background: rgba(0, 240, 255, 0.12);
+      border-color: rgba(0, 240, 255, 0.45);
+      transform: translateZ(0) translateY(-1px);
+    }
+
+    .nav-home-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ═══════════════════════════════════════
+       TERMINAL
+       ═══════════════════════════════════════ */
+    .terminal-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 22px;
+      background: #060a18;
+      border: 1px solid var(--border-glass);
+      border-radius: 12px 12px 0 0;
+    }
+
+    .terminal-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .terminal-dot.red    { background: #ff5f57; }
+    .terminal-dot.yellow { background: #ffbd2e; }
+    .terminal-dot.green  { background: #28c840; }
+
+    .terminal-title {
+      margin-left: 14px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+    .terminal-title span { color: var(--cyan); }
+
+    .terminal-body {
+      background: #050919;
+      border: 1px solid var(--border-glass);
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      padding: 28px 26px 22px;
+      margin-bottom: 56px;
+    }
+
+    .terminal-prompt {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.9;
+    }
+    .terminal-prompt .cmd     { color: var(--cyan); }
+    .terminal-prompt .flag    { color: var(--purple); }
+    .terminal-prompt .str     { color: var(--green); }
+    .terminal-prompt .comment { color: var(--text-dim); font-style: italic; }
+
+    .cursor-blink {
+      display: inline-block;
+      width: 9px;
+      height: 17px;
+      background: var(--cyan);
+      margin-left: 4px;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* ═══════════════════════════════════════
+       SECTION HEADER
+       ═══════════════════════════════════════ */
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 18px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--cyan);
+      background: rgba(0, 240, 255, 0.08);
+      border: 1px solid rgba(0, 240, 255, 0.18);
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+
+    .section-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--cyan);
+      border-radius: 50%;
+      animation: pulse-dot 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.3; }
+    }
+
+    .section-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #fff 0%, var(--cyan) 50%, var(--purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .section-header p strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* ═══════════════════════════════════════
+       TIMELINE
+       ═══════════════════════════════════════ */
+    .timeline {
+      position: relative;
+      padding-left: 44px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(180deg, transparent 0%, var(--cyan-dim) 10%, var(--purple-dim) 60%, transparent 100%);
+    }
+
+    .tl-entry {
+      position: relative;
+      margin-bottom: 48px;
+      content-visibility: auto;
+      contain-intrinsic-size: 0 280px;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    .tl-entry:nth-child(1) { animation-delay: 0.1s; }
+    .tl-entry:nth-child(2) { animation-delay: 0.25s; }
+    .tl-entry:nth-child(3) { animation-delay: 0.4s; }
+    .tl-entry:nth-child(4) { animation-delay: 0.55s; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tl-node {
+      position: absolute;
+      left: -44px;
+      top: 24px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 2px solid var(--cyan);
+      background: var(--bg-void);
+      transform: translateX(9px);
+    }
+    .tl-entry.status-live     .tl-node { border-color: var(--green); }
+    .tl-entry.status-paused   .tl-node { border-color: var(--amber); }
+    .tl-entry.status-upcoming .tl-node { border-color: var(--purple); }
+
+    .tl-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 28px 30px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+      transform: translateZ(0);
+    }
+
+    .tl-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .tl-entry:nth-child(1) .tl-card::before { background: linear-gradient(90deg, transparent, rgba(0,240,255,0.2), transparent); }
+    .tl-entry:nth-child(2) .tl-card::before { background: linear-gradient(90deg, transparent, rgba(52,211,153,0.2), transparent); }
+    .tl-entry:nth-child(3) .tl-card::before { background: linear-gradient(90deg, transparent, rgba(251,191,36,0.2), transparent); }
+    .tl-entry:nth-child(4) .tl-card::before { background: linear-gradient(90deg, transparent, rgba(168,85,247,0.2), transparent); }
+
+    .tl-card:hover {
+      border-color: var(--border-hover);
+      transform: translateZ(0) translateY(-2px);
+    }
+    .tl-card:hover::before { opacity: 1; }
+
+    .tl-entry.status-upcoming .tl-card { border-style: dashed; }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .card-date {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 12px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 999px;
+    }
+    .card-tag .tag-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    .card-tag.deployed { color: var(--cyan);   background: rgba(0,240,255,0.08);   border: 1px solid rgba(0,240,255,0.15); }
+    .card-tag.released { color: var(--green);  background: rgba(52,211,153,0.08);  border: 1px solid rgba(52,211,153,0.15); }
+    .card-tag.paused   { color: var(--amber);  background: rgba(251,191,36,0.08);  border: 1px solid rgba(251,191,36,0.15); }
+    .card-tag.roadmap  { color: var(--purple); background: rgba(168,85,247,0.08);  border: 1px solid rgba(168,85,247,0.15); }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: -0.4px;
+      color: #fff;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .card-title .hl-c { color: var(--cyan); }
+    .card-title .hl-p { color: var(--purple); }
+
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .card-desc strong { color: var(--text-primary); font-weight: 500; }
+
+    .tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 4px 14px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 8px;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .pill:hover { border-color: var(--border-hover); color: var(--cyan); }
+
+    .commit-hash {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      margin-top: 14px;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+    .commit-hash span { color: var(--cyan-dim); }
+
+    /* ═══════════════════════════════════════
+       FOOTER STATUS BAR
+       ═══════════════════════════════════════ */
+    .status-bar {
+      margin-top: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 24px;
+      background: #060a18;
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse-dot 2.5s ease-in-out infinite;
+    }
+
+    .live-text   { color: var(--green); font-weight: 500; }
+    .sig         { color: var(--text-dim); }
+    .sig span    { color: var(--cyan); font-weight: 700; }
+
+    .footer-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-home:hover { color: var(--cyan); }
+    .footer-home svg {
+      width: 12px;
+      height: 12px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════ */
+    @media (max-width: 640px) {
+      .page-wrapper { padding: 0 16px 80px; }
+      .top-nav { margin: 0 -16px 36px; padding: 14px 16px; }
+      .nav-brand-name { font-size: 14px; }
+      .nav-brand-sub { font-size: 8.5px; }
+      .nav-home-btn { padding: 8px 16px; font-size: 11px; gap: 6px; }
+      .nav-home-btn svg { width: 12px; height: 12px; }
+      .timeline { padding-left: 34px; }
+      .timeline::before { left: 10px; }
+      .tl-node { left: -34px; width: 9px; height: 9px; transform: translateX(6px); }
+      .tl-card { padding: 22px 20px 20px; }
+      .card-title { font-size: 18px; }
+      .terminal-bar { padding: 12px 16px; }
+      .terminal-body { padding: 20px 18px 18px; }
+      .status-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 14px 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>// SYSTEM CHANGELOG</h1>
-    <p>Tracking the evolution of the Bhavishya Parjapati digital entity.</p>
+  <div class="bg-ambient"></div>
 
-    <div class="version-block">
-        <div class="version-title">
-            <span>v2.4.0 - "Domination" <span class="tag-new">LATEST</span></span>
-            <span class="date">2026-02-02</span>
+  <div class="page-wrapper">
+
+    <!-- ═══ STICKY NAV ═══ -->
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="https://bhvsy.github.io" class="nav-brand" aria-label="Bhvsy OS Home">
+        <img src="/favicon-32x32.png" alt="Bhvsy OS Logo" class="nav-logo" width="34" height="34" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Bhvsy OS</span>
+          <span class="nav-brand-sub">System Updates</span>
         </div>
-        <ul>
-            <li>Deployed Satellite Network (Trading, Setup, Vault).</li>
-            <li>Upgraded SEO Core to "Hisar" protocol.</li>
-            <li>Migrated Legacy System to new architecture.</li>
-        </ul>
+      </a>
+      <a href="https://bhvsy.github.io" class="nav-home-btn" aria-label="Return to homepage">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+        Home
+      </a>
+    </nav>
+
+    <!-- ═══ TERMINAL ═══ -->
+    <div class="terminal-bar" role="presentation">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-title"><span>bhvsy@os</span>:~/changelog $</span>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-prompt">
+        <span class="comment">// initializing system update feed...</span><br />
+        <span class="cmd">fetch</span> <span class="flag">--source</span> <span class="str">"bhvsy-os/core"</span> <span class="flag">--branch</span> <span class="str">"main"</span><br />
+        <span class="cmd">render</span> <span class="flag">--format</span> <span class="str">"timeline"</span> <span class="flag">--auth</span> <span class="str">"bhavishya.parjapati"</span><br />
+        <span class="comment">// ✓ 4 entries loaded · stream active</span><span class="cursor-blink"></span>
+      </div>
     </div>
 
-    <div class="version-block">
-        <div class="version-title">
-            <span>v2.0.0 - "Rebirth"</span>
-            <span class="date">2026-01-01</span>
-        </div>
-        <ul>
-            <li>Initialized "Bhvsy" identity.</li>
-            <li>Launched main Operating System interface.</li>
-            <li>Established dark-mode visual language.</li>
-        </ul>
-    </div>
+    <!-- ═══ HEADER ═══ -->
+    <header class="section-header">
+      <div class="section-badge">System Updates</div>
+      <h1>Changelog &amp; Dispatch Log</h1>
+      <p>Chronological build log from the <strong>Bhvsy OS</strong> ecosystem -- every deployment, release, and shift documented.</p>
+    </header>
 
-    <div class="version-block">
-        <div class="version-title">
-            <span>v1.0.0 - "Origin"</span>
-            <span class="date">2024-01-01</span>
-        </div>
-        <ul>
-            <li>Initial deployment of Bhavishya Parjapati portfolio.</li>
-            <li>Basic contact protocols established.</li>
-        </ul>
-    </div>
+    <!-- ═══ TIMELINE ═══ -->
+    <main class="timeline" role="list" aria-label="Changelog timeline">
 
-    <a href="https://bhvsy.github.io/" class="back-link">← Return to Main OS</a>
+      <article class="tl-entry status-live" role="listitem">
+        <div class="tl-node" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="card-meta">
+            <time class="card-date" datetime="2026-03">March 2026</time>
+            <span class="card-tag deployed"><span class="tag-dot"></span>Deployed</span>
+          </div>
+          <h2 class="card-title">Bhvsy OS <span class="hl-c">Core Portal</span> Deployed</h2>
+          <p class="card-desc">
+            Successfully executed a <strong>complete brand overhaul</strong> for the main digital ecosystem. Integrated a new geometric <strong>'B' logo architecture</strong>, fully configured <strong>PWA manifest</strong> for native mobile installation, and optimized global <strong>SEO metadata</strong> across all entry points.
+          </p>
+          <div class="tech-pills" aria-label="Technologies used">
+            <span class="pill">PWA</span>
+            <span class="pill">SEO</span>
+            <span class="pill">Logo System</span>
+            <span class="pill">Brand Overhaul</span>
+            <span class="pill">Manifest v3</span>
+          </div>
+          <div class="commit-hash"><span>commit</span> #a7f3e1d · latest</div>
+        </div>
+      </article>
+
+      <article class="tl-entry status-live" role="listitem">
+        <div class="tl-node" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="card-meta">
+            <time class="card-date" datetime="2026-01">Q1 2026</time>
+            <span class="card-tag released"><span class="tag-dot"></span>Released</span>
+          </div>
+          <h2 class="card-title">News Guard <span class="hl-c">Extension</span> Released</h2>
+          <p class="card-desc">
+            Launched a custom-built <strong>Chrome/Edge extension</strong> engineered for funded prop firm traders. Features <strong>real-time alerts</strong> and <strong>smart countdown timers</strong> to protect traders from high-impact news slippage and compliance violations.
+          </p>
+          <div class="tech-pills" aria-label="Technologies used">
+            <span class="pill">Chrome Extension</span>
+            <span class="pill">MV3</span>
+            <span class="pill">Prop Trading</span>
+            <span class="pill">Real-Time Alerts</span>
+            <span class="pill">Risk Engine</span>
+          </div>
+          <div class="commit-hash"><span>commit</span> #c4d902b · stable</div>
+        </div>
+      </article>
+
+      <article class="tl-entry status-paused" role="listitem">
+        <div class="tl-node" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="card-meta">
+            <span class="card-date">Current Status</span>
+            <span class="card-tag paused"><span class="tag-dot"></span>Scaled Back</span>
+          </div>
+          <h2 class="card-title">Academic <span class="hl-p">Sabbatical</span></h2>
+          <p class="card-desc">
+            Operations temporarily scaled back to focus on dominating <strong>10th-grade HBSE Board Exams</strong>. Core systems remain online and monitored -- full-scale development resumes post-examination cycle.
+          </p>
+          <div class="tech-pills" aria-label="Context">
+            <span class="pill">HBSE Boards</span>
+            <span class="pill">Priority: Academic</span>
+            <span class="pill">Ops Paused</span>
+          </div>
+          <div class="commit-hash"><span>status</span> #standby · monitoring</div>
+        </div>
+      </article>
+
+      <article class="tl-entry status-upcoming" role="listitem">
+        <div class="tl-node" aria-hidden="true"></div>
+        <div class="tl-card">
+          <div class="card-meta">
+            <span class="card-date">Upcoming</span>
+            <span class="card-tag roadmap"><span class="tag-dot"></span>On Roadmap</span>
+          </div>
+          <h2 class="card-title">Project <span class="hl-p">'AI Trading Journal'</span></h2>
+          <p class="card-desc">
+            Preparing to break ground on a massive new tool -- an <strong>AI-powered financial trading journal</strong>, leveraging <strong>local AI models</strong> running on an in-house <strong>MSI RTX 4060 GPU</strong> infrastructure. Designed for deep pattern recognition, emotional bias detection, and autonomous trade analysis.
+          </p>
+          <div class="tech-pills" aria-label="Planned technologies">
+            <span class="pill">Local AI / LLM</span>
+            <span class="pill">RTX 4060</span>
+            <span class="pill">Trade Analytics</span>
+            <span class="pill">GPU Inference</span>
+            <span class="pill">Next.js</span>
+          </div>
+          <div class="commit-hash"><span>branch</span> #dev/ai-journal · pre-alpha</div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="status-bar">
+      <div class="status-indicator">
+        <span class="live-dot"></span>
+        <span class="live-text">SYSTEMS NOMINAL</span>
+      </div>
+      <a href="https://bhvsy.github.io" class="footer-home">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        bhvsy.github.io
+      </a>
+      <span class="sig">built by <span>Bhavishya Parjapati</span></span>
+    </footer>
+
+  </div>
 
 </body>
 </html>
